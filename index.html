@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>എഡിറ്റിംഗ് ലോകം | Editing Lokam - All Editing Resources in One Place</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="എഡിറ്റിംഗ് ലോകം (Editing Lokam) - The ultimate hub for video and photo editing resources, apps, tutorials, sound effects, presets, and fonts.">
+  <meta name="keywords" content="Editing Lokam, എഡിറ്റിംഗ് ലോകം, CapCut, Premiere Pro, After Effects, DaVinci Resolve, Lightroom presets, Photoshop, Malayalam editing resources">
+  <meta property="og:title" content="എഡിറ്റിംഗ് ലോകം (Editing Lokam)">
+  <meta property="og:description" content="All Editing Resources in One Place. Download PC & Mobile video/photo editing software, tutorials, and project packs.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Malayalam friendly Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Malayalam:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header" id="main-header">
+    <div class="container nav-container">
+      <!-- Logo & Title -->
+      <a href="#/" class="nav-brand" aria-label="Editing Lokam Home">
+        <img src="assets/logo.png" alt="എഡിറ്റിംഗ് ലോകം Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title ml-text">എഡിറ്റിംഗ് ലോകം</span>
+          <span class="brand-sub">Editing Lokam</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li>
+          <button class="nav-link-btn active" data-nav="home">Home</button>
+        </li>
+        <li>
+          <button class="nav-link-btn" data-nav="video">Video Editing</button>
+        </li>
+        <li>
+          <button class="nav-link-btn" data-nav="photo">Photo Editing</button>
+        </li>
+        <li>
+          <button class="nav-link-btn" data-nav="resources">All Resources</button>
+        </li>
+      </ul>
+
+      <!-- Nav Actions (Search + Telegram + Hamburger) -->
+      <div class="nav-right-actions">
+        <!-- Quick Search Button -->
+        <button class="nav-search-btn" id="nav-search-btn" aria-label="Search resources">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search...</span>
+          <kbd class="search-kbd">Ctrl K</kbd>
+        </button>
+
+        <!-- Community Telegram Pill -->
+        <a href="https://t.me/ABEZOFFICIAL" target="_blank" rel="noopener noreferrer" class="nav-tg-btn" title="Join Telegram Channel">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.17 3.35-1.37 3.73-1.38.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+          </svg>
+          <span>Telegram</span>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Open mobile menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= BREADCRUMBS BAR ================= -->
+  <div class="container" id="breadcrumbs-bar" style="display: none;">
+    <div class="nav-breadcrumbs-bar">
+      <ul class="breadcrumbs-list" id="breadcrumbs-list">
+        <!-- Rendered dynamically -->
+      </ul>
+      <button class="btn-back" id="btn-back">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Categories</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= MAIN CONTENT CONTAINER ================= -->
+  <main class="container">
+
+    <!-- ================= 1. HOME VIEW ================= -->
+    <div id="home-view">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-badge">
+          <span>✨ Curated Editing Vault</span>
+          <span style="opacity: 0.4;">•</span>
+          <span>Malayalam Creator Hub</span>
+        </div>
+
+        <!-- Supplied Malayalam Logo Presentation -->
+        <div class="hero-logo-wrapper">
+          <img src="assets/logo.png" alt="എഡിറ്റിംഗ് ലോകം Banner" class="hero-logo-img">
+        </div>
+
+        <h1 class="hero-title ml-text">
+          <span class="hero-title-accent">എഡിറ്റിംഗ് ലോകം</span>
+        </h1>
+        <p class="hero-subtitle">
+          All Editing Resources in One Place
+        </p>
+
+        <!-- Hero Instant Search -->
+        <div class="hero-search-box">
+          <form id="hero-search-form" class="hero-search-input-wrapper">
+            <span class="hero-search-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input type="text" id="hero-search-input" class="hero-search-input" placeholder="Search apps, tutorials, sound effects, or presets..." autocomplete="off">
+            <button type="submit" class="hero-search-submit-btn">Search Vault</button>
+          </form>
+        </div>
+
+        <!-- Quick Tag Chips -->
+        <div class="hero-quick-tags">
+          <span>Popular:</span>
+          <button class="quick-tag-chip" data-search="CapCut">CapCut</button>
+          <button class="quick-tag-chip" data-search="Premiere Pro">Premiere Pro</button>
+          <button class="quick-tag-chip" data-search="After Effects">After Effects</button>
+          <button class="quick-tag-chip" data-search="DaVinci Resolve">DaVinci Resolve</button>
+          <button class="quick-tag-chip" data-search="Photoshop">Photoshop</button>
+          <button class="quick-tag-chip" data-search="Sound Effects">Sound Effects</button>
+          <button class="quick-tag-chip" data-search="Presets">Lightroom Presets</button>
+          <button class="quick-tag-chip" data-search="Fonts">Malayalam Fonts</button>
+        </div>
+      </section>
+
+      <!-- Main Two Category Cards Showcase -->
+      <section style="margin-top: 10px;">
+        <div class="section-header-block" style="text-align: center;">
+          <span class="section-tag">Explore Categories</span>
+          <h2 class="section-main-title">Select Your Creative Specialty</h2>
+          <p class="section-desc" style="margin: 0 auto;">Choose between video production or photo manipulation to access tailored software, comprehensive video courses, and high-resolution asset packs.</p>
+        </div>
+
+        <div class="category-showcase-grid">
+          <!-- Card 1: Video Editing -->
+          <div class="main-cat-card" data-category="video" role="button" tabindex="0" aria-label="Open Video Editing category">
+            <div class="cat-card-top">
+              <div class="cat-icon-badge">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+              </div>
+              <div class="cat-stat-pills">
+                <span class="stat-pill">11+ Software Apps</span>
+                <span class="stat-pill">8 Curated Tutorials</span>
+                <span class="stat-pill">6 Cloud Asset Packs</span>
+              </div>
+            </div>
+
+            <div class="cat-card-middle">
+              <span class="cat-card-title-ml ml-text">ക്ലാസിക് & ട്രെൻഡിംഗ് വീഡിയോ എഡിറ്റിംഗ്</span>
+              <h3 class="cat-card-title">1. Video Editing</h3>
+              <p class="cat-card-desc">
+                Everything you need to craft viral reels and cinematic films: CapCut PC & Mobile, Premiere Pro, After Effects, DaVinci Resolve, plus 4K raw clips, sound effects, transitions, and motion backgrounds.
+              </p>
+            </div>
+
+            <div class="cat-card-bottom">
+              <span class="cat-explore-btn">
+                <span>Explore Video Editing</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+              <span style="font-size: 0.8rem; color: var(--text-dim);">PC & Mobile</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Photo Editing -->
+          <div class="main-cat-card" data-category="photo" role="button" tabindex="0" aria-label="Open Photo Editing category">
+            <div class="cat-card-top">
+              <div class="cat-icon-badge">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+              </div>
+              <div class="cat-stat-pills">
+                <span class="stat-pill">7+ Graphic Apps</span>
+                <span class="stat-pill">7 Pro Masterclasses</span>
+                <span class="stat-pill">3 Design Asset Libraries</span>
+              </div>
+            </div>
+
+            <div class="cat-card-middle">
+              <span class="cat-card-title-ml ml-text">ക്രിയേറ്റീവ് ഫോട്ടോ & ഗ്രാഫിക് ഡിസൈൻ</span>
+              <h3 class="cat-card-title">2. Photo Editing</h3>
+              <p class="cat-card-desc">
+                Master visual storytelling with Adobe Photoshop, Illustrator, Canva, Lightroom Mobile, and Picsart. Download typography fonts, aesthetic Lightroom presets, and PSD templates.
+              </p>
+            </div>
+
+            <div class="cat-card-bottom">
+              <span class="cat-explore-btn">
+                <span>Explore Photo Editing</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+              <span style="font-size: 0.8rem; color: var(--text-dim);">PC & Mobile</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ================= 2. CATEGORY DETAIL VIEW ================= -->
+    <div id="category-view" style="display: none;">
+      <!-- Category Banner -->
+      <section class="section-header-block">
+        <span class="section-tag" id="category-header-title-ml">വീഡിയോ എഡിറ്റിംഗ് ഹബ്</span>
+        <h1 class="section-main-title" id="category-header-title">Video Editing</h1>
+        <p class="section-desc" id="category-header-desc">
+          Browse apps, tutorials, and cloud asset libraries.
+        </p>
+      </section>
+
+      <!-- Three Main Section Tabs: Apps | Tutorials | Resources -->
+      <div style="display: flex; justify-content: flex-start;">
+        <nav class="section-nav-tabs-wrapper" aria-label="Section navigation">
+          <button class="tab-btn active" data-section="apps">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="14" x2="23" y2="14"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+            <span>1. Apps</span>
+          </button>
+
+          <button class="tab-btn" data-section="tutorials">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span>2. Tutorials</span>
+          </button>
+
+          <button class="tab-btn" data-section="resources">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+            <span>3. Resources</span>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Sub-navigation Filter Toolbar (PC/Mobile + Free/Paid/Paid for Free) -->
+      <div class="filter-toolbar" id="filter-toolbar">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Content Cards Grid -->
+      <div class="content-cards-grid" id="content-cards-container">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ================= SEARCH MODAL ================= -->
+  <div class="search-modal-backdrop" id="search-modal">
+    <div class="search-modal-box">
+      <div class="modal-search-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--electric-cyan)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="modal-search-input" class="modal-search-input" placeholder="Search across all apps, tutorials, and resources..." autocomplete="off">
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Filter chips inside modal -->
+      <div class="modal-filter-chips">
+        <button class="pill-btn modal-filter-chip active" data-filter="all">All</button>
+        <button class="pill-btn modal-filter-chip" data-filter="video">Video Editing</button>
+        <button class="pill-btn modal-filter-chip" data-filter="photo">Photo Editing</button>
+        <button class="pill-btn modal-filter-chip" data-filter="apps">Apps</button>
+        <button class="pill-btn modal-filter-chip" data-filter="tutorials">Tutorials</button>
+        <button class="pill-btn modal-filter-chip" data-filter="resources">Resources</button>
+      </div>
+
+      <!-- Live Search Results List -->
+      <ul class="modal-search-results-list" id="modal-search-results">
+        <!-- Injected via JavaScript -->
+      </ul>
+
+      <div class="modal-search-footer">
+        <span>Use <b>Esc</b> to exit • Click <b>Go →</b> to navigate directly</span>
+        <span>⚡ Fast In-Memory Search</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MOBILE NAVIGATION DRAWER ================= -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="mobile-drawer-content">
+      <div>
+        <div class="mobile-drawer-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/logo.png" alt="Logo" style="height: 36px; border-radius: 6px;">
+            <span class="ml-text" style="font-weight: 800; color: var(--electric-cyan);">എഡിറ്റിംഗ് ലോകം</span>
+          </div>
+          <button class="modal-close-btn" id="mobile-drawer-close" aria-label="Close drawer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="mobile-drawer-links">
+          <li>
+            <button class="mobile-nav-item-btn" data-nav="home">
+              <span>🏠</span>
+              <span>Home</span>
+            </button>
+          </li>
+          <li>
+            <button class="mobile-nav-item-btn" data-nav="video">
+              <span>🎬</span>
+              <span>Video Editing</span>
+            </button>
+          </li>
+          <li>
+            <button class="mobile-nav-item-btn" data-nav="photo">
+              <span>📸</span>
+              <span>Photo Editing</span>
+            </button>
+          </li>
+          <li>
+            <button class="mobile-nav-item-btn" data-nav="resources">
+              <span>📦</span>
+              <span>All Cloud Resources</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div style="padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+        <a href="https://t.me/ABEZOFFICIAL" target="_blank" rel="noopener noreferrer" class="btn-primary-action" style="width: 100%; margin-bottom: 10px;">
+          <span>Join Telegram Channel</span>
+        </a>
+        <p style="font-size: 0.74rem; color: var(--text-dim); text-align: center;">
+          Editing Lokam • Malayalam Creator Hub
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TOAST NOTIFICATION ================= -->
+  <div class="toast-notice" id="toast-notice">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--electric-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-message">Link copied to clipboard!</span>
+  </div>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col-brand">
+          <img src="assets/logo.png" alt="എഡിറ്റിംഗ് ലോകം" class="brand-logo-img">
+          <p class="footer-about-text">
+            <b>എഡിറ്റിംഗ് ലോകം (Editing Lokam)</b> provides Malayalam and global creators with direct access to official editing tools, comprehensive masterclasses, sound libraries, and raw footage packs.
+          </p>
+          <div style="display: flex; gap: 10px;">
+            <a href="https://t.me/ABEZOFFICIAL" target="_blank" rel="noopener noreferrer" class="pill-btn" style="color: var(--electric-cyan); border-color: var(--neon-border);">
+              Telegram: ABEZ OFFICIAL
+            </a>
+            <a href="https://t.me/atomguyadobe" target="_blank" rel="noopener noreferrer" class="pill-btn" style="color: var(--electric-cyan); border-color: var(--neon-border);">
+              Telegram: Atom Guy Adobe
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Video Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Video Editing</h4>
+          <ul class="footer-links-list">
+            <li><a href="#/video/apps/pc">PC Video Apps</a></li>
+            <li><a href="#/video/apps/mobile">Mobile Video Apps</a></li>
+            <li><a href="#/video/tutorials/pc">PC Video Tutorials</a></li>
+            <li><a href="#/video/tutorials/mobile">Mobile Video Tutorials</a></li>
+            <li><a href="#/video/resources">Sound Effects & Packs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Photo Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Photo Editing</h4>
+          <ul class="footer-links-list">
+            <li><a href="#/photo/apps/pc">PC Photo Software</a></li>
+            <li><a href="#/photo/apps/mobile">Mobile Photo Apps</a></li>
+            <li><a href="#/photo/tutorials/pc">Photoshop & Illustrator Courses</a></li>
+            <li><a href="#/photo/tutorials/mobile">Lightroom & Picsart Mobile</a></li>
+            <li><a href="#/photo/resources">Typography & Presets</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Transparency & Software Disclaimer -->
+        <div>
+          <h4 class="footer-col-title">Disclaimer & Safety</h4>
+          <div class="footer-disclaimer-box">
+            <p style="margin-bottom: 8px;">
+              🛡️ <b>Transparent Labeling:</b> We clearly distinguish official downloads (Google Play, Microsoft Store, Adobe, Canva) from community-shared links.
+            </p>
+            <p>
+              Please support original software creators whenever possible. External resource mirrors are hosted by third-party creators.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Credits -->
+      <div class="footer-bottom-row">
+        <span>© 2026 <b>എഡിറ്റിംഗ് ലോകം (Editing Lokam)</b>. All rights reserved.</span>
+        <span>Designed with cinematic electric aesthetics for creative editors.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Data first, then Application logic -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
